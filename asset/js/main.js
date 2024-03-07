@@ -21,6 +21,9 @@ const scontoOver = 40 / 100;
 
 const price = document.querySelector('.price');
 
+const carrozzaNumero = document.querySelector('.carrozzaNumero');
+let carrozzaNumeroRandom = parseInt(Math.random() * 12) + 1;
+console.log(carrozzaNumeroRandom);
 
 
 //funzione prendi i dati e mettili al posto giusto
@@ -45,6 +48,9 @@ inviaDati.addEventListener('click', function () {
     } else {
         offerta.innerHTML = "Offerta standard"
     }
+
+    // determina il numero di carrozza
+    carrozzaNumero.innerHTML = carrozzaNumeroRandom;
 
     price.innerHTML = '€ ';
     //console.log('vuoi percorrere km: ', parseInt(km.value));
