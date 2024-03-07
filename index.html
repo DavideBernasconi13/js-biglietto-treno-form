@@ -28,24 +28,48 @@
             <div class="container p-2">
                 <div class="input-group">
                     <span class="input-group-text">Inserisci il tuo nome e il tuo cognome</span>
-                    <input type="text" aria-label="First name" class="form-control">
-                    <input type="text" aria-label="Last name" class="form-control">
+                    <input type="text" class="form-control fname" value="">
+                    <input type="text" class="form-control sname">
                 </div>
                 <div class="row g-1 mt-2">
                     <div class="col">
-                        <input type="number" class="form-control" placeholder="Km da percorrere" aria-label="Km">
+                        <input type="number" class="form-control km" placeholder="Km da percorrere">
                     </div>
                     <div class="col">
-                        <input type="number" class="form-control" placeholder="Indica la tua età" aria-label="age">
+                        <input type="number" class="form-control age" placeholder="Indica la tua età">
                     </div>
                 </div>
                 <div class="mt-4 mx-auto ">
-                    <button class="btn btn-success w-50 p-1 ">Genera biglietto</button>
-                    <button class="btn btn-danger w-25 p-1">Reset</button>
+                    <button id="submit" class="btn btn-success w-50 p-1 ">Genera biglietto</button>
+                    <button id="reset" class="btn btn-danger w-25 p-1">Reset</button>
                 </div>
 
             </div>
 
+        </div>
+
+        <!-- Ticket -->
+        <div id="ticket" class="container mt-4 p-3 bg-success d-none">
+            <h2 class="text-center text-light">Il tuo biglietto</h2>
+            <div class="container bg-light p-3">
+                <div class="row">Dettagli passeggero</div>
+                <div class="row d-flex">
+                    <div class="col bg-dark text-light">
+                        <p>Nome e cognome del passeggero: </p><span class="fname"></span> <span class="sname"></span>
+                    </div>
+                    <div class="col">
+                        <p>Offerta</p>
+                        <p class="tipologiaOfferta"></p>
+                    </div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col">
+                        <p>Costo del biglietto</p>
+                        <span class="price">€ </span>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
     </div>
