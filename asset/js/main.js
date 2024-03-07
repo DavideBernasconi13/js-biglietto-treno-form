@@ -46,6 +46,7 @@ inviaDati.addEventListener('click', function () {
         offerta.innerHTML = "Offerta standard"
     }
 
+    price.innerHTML = '€ ';
     //console.log('vuoi percorrere km: ', parseInt(km.value));
     //console.log('La tua età è: ', parseInt(age.value));
     if (age.value < 18) {
@@ -58,6 +59,7 @@ inviaDati.addEventListener('click', function () {
         //console.log('prezzo con sconto over : ', prezzoOver.toFixed(2));
     } else {
         price.append(prezzoSenzaSconto.toFixed(2));
+
         //console.log('prezzo normale :', prezzoSenzaSconto.toFixed(2))
     }
     ticket.classList.remove('d-none');
