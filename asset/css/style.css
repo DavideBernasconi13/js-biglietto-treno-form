@@ -1,0 +1,14 @@
+*,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+#form {
+    padding: 20px;
+    border-radius: 10px;
+}

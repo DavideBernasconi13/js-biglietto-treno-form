@@ -5,7 +5,7 @@
 // va applicato uno sconto del 40% per gli over 65.
 // L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
-let km = parseInt(prompt("Quanti km vuoi percorrere?"));
+/*let km = parseInt(prompt("Quanti km vuoi percorrere?"));
 console.log('km da percorrere', km);
 let age = parseInt(prompt("Quanti hanni hai?"));
 console.log('età', age);
@@ -29,4 +29,4 @@ if (age < 18) {
     console.log('prezzo con sconto over : ', prezzoOver.toFixed(2));
 } else {
     console.log('prezzo normale :', prezzoSenzaSconto.toFixed(2))
-}  
+}  */
