@@ -24,7 +24,8 @@ const price = document.querySelector('.price');
 const carrozzaNumero = document.querySelector('.carrozzaNumero');
 let carrozzaNumeroRandom = parseInt(Math.random() * 12) + 1;
 console.log(carrozzaNumeroRandom);
-
+const codiceOperazione = document.querySelector('.codiceOperazione');
+let codiceOperazioneRandom = parseInt(Math.random() * 9999) + 1;
 
 //funzione prendi i dati e mettili al posto giusto
 const inviaDati = document.getElementById('submit');
@@ -51,6 +52,9 @@ inviaDati.addEventListener('click', function () {
 
     // determina il numero di carrozza
     carrozzaNumero.innerHTML = carrozzaNumeroRandom;
+
+    // determina il numero di operazione random
+    codiceOperazione.innerHTML = codiceOperazioneRandom;
 
     price.innerHTML = '€ ';
     //console.log('vuoi percorrere km: ', parseInt(km.value));
@@ -79,7 +83,7 @@ reset.addEventListener('click', function () {
     sname.value = '';
     age.value = '';
     km.value = '';
-    price.innerHTML = '€ ';
+    //price.innerHTML = '€ ';
     ticket.classList.add('d-none');
 })
 
